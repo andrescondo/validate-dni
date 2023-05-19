@@ -16,6 +16,11 @@ module.exports.validateDNI = async (dni, country, message) => {
       throw err;
     }
 
+    if(typeof(dni) !== 'string'){
+        err.message = `This value must be of type string: ${dni}`;
+        throw err;
+    }
+
     country = country.toLowerCase();
 
 
