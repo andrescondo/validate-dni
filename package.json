@@ -1,6 +1,6 @@
 {
   "name": "validate-dni",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "validate ci, dni and other credentials identification",
   "main": "src/index.js",
   "scripts": {
@@ -12,8 +12,20 @@
     "ci",
     "credentials",
     "cedula",
-    "identification"
+    "identification",
+    "ecuador",
+    "chile",
+    "colombia",
+    "peru"
   ],
   "author": "andrescondo",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrescondo/validate-dni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrescondo/validate-dni/issues"
+  },
+  "homepage": "https://github.com/andrescondo/validate-dni#readme"
 }

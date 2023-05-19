@@ -15,7 +15,7 @@ module.exports.ecuador = async (dni, message) => {
 
     // Verificar si la cédula tiene 10 dígitos
     if (dni.length !== 10) {
-        err.message = 'The ID must have 10 digits';
+        err.message = 'The CI must have 10 digits';
         throw err;
     }
 
