@@ -28,9 +28,9 @@ await validateDNI(dni, codeCountry, message);
  
 **Required**
 </hr>
-The **dni** is the identification number to be validated, which is entered as a string for later use.
+The dni is the identification number to be validated, which is entered as a string for later use.
 
-The **codeCountry** is the initials of the countries that are currently validated for verification. The format **ISO 3166-1 ISO 3166-1
+The codeCountry is the initials of the countries that are currently validated for verification. The format **ISO 3166-1 ISO 3166-1
 alpha2** is being used for country codes.
 
 
@@ -55,7 +55,7 @@ Each function is focused on the validation of a specific country, which has its 
 ## Descripción
 Esta es una libreria que nos permite la validación de las credenciales de identidas, normalmente conocidas como cedulas, DNI, etc.
 
-usando javascript vanila se comenzo con el desarrollo de la misma, para así poder ayudar a diversos desarrollos de manera directa y evitar el buscar en diversos lados, y este al alcance de la comunidad
+Usando javascript vanila se comenzo con el desarrollo de la misma, para así poder ayudar a diversos desarrollos de manera directa y evitar el buscar en diversos lados, y este al alcance de la comunidad
 
 ## Instalación
 ````
@@ -73,10 +73,10 @@ await validateDNI(dni, codigoPais, mensaje);
  
 **Requerido**
 </hr>
-El **dni** , es el número de identificación a validar, el cúal ingresa como string para su posterior uso.
+El dni, es el número de identificación a validar, el cúal ingresa como string para su posterior uso.
 
 </br>
-El **códigoPaís** son las iniciales de los paises que actualmente están validados para su comprobación. Se esta usando el formato **ISO 3166-1
+El códigoPaís son las iniciales de los paises que actualmente están validados para su comprobación. Se esta usando el formato **ISO 3166-1
 alpha2** para los códigos de los países.
 
 
@@ -84,7 +84,7 @@ alpha2** para los códigos de los países.
 
 **Opcional**
 </hr>
-El **mensaje** nos sirve para personalizar el mensaje de error y tener mas control de que se le va a mostrar al usuario.
+El mensaje nos sirve para personalizar el mensaje de error y tener mas control de que se le va a mostrar al usuario.
 
 </br>
 </br>
