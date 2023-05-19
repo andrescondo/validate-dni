@@ -9,7 +9,9 @@
 ## Description
 This is a library that allows us to validate identity credentials, normally known as cedulas, DNI, etc.
 
-using vanila javascript, the development of it began, in order to help various developments directly and avoid searching in different places, and it is within the reach of the community
+using vanila javascript, the development of it began, in order to help various developments directly and avoid searching in different places, and it is within the reach of the community.
+
+Being an open source project, they are invited to participate and be able to add the validations for their respective countries, and thus be able to give this library a greater reach.
 
 
 ## Installation
@@ -55,18 +57,20 @@ Each function is focused on the validation of a specific country, which has its 
 ## Descripción
 Esta es una libreria que nos permite la validación de las credenciales de identidas, normalmente conocidas como cedulas, DNI, etc.
 
-Usando javascript vanila se comenzo con el desarrollo de la misma, para así poder ayudar a diversos desarrollos de manera directa y evitar el buscar en diversos lados, y este al alcance de la comunidad
+Usando javascript vanila se comenzo con el desarrollo de la misma, para así poder ayudar a diversos desarrollos de manera directa y evitar el buscar en diversos lados, y este al alcance de la comunidad.
+
+Al ser proyecto de codigo abierto, estás invitados a participar y poder ir añadiendo las validaciones para sus respectivos paises, y así poder darle mayor alcance a esta librería.
 
 ## Instalación
 ````
-$ npm i validate-id-mongo --save
+$ npm i validate-dni --save
 ````
 
 
 ## Ejemplo de uso
 
 ````
-const { validateDNI } = require('validate-id-mongo');
+const { validateDNI } = require('validate-dni');
 
 await validateDNI(dni, codigoPais, mensaje);
 ````
