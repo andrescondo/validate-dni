@@ -1,11 +1,11 @@
 # Validate DNI
 **Indice**
-- [Spanish](#es)
-- [English](#en)
+- [Spanish](#español)
+- [English](#english)
 
 
 
-## English <a name="en"></a>
+## English
 ## Description
 This is a library that allows us to validate identity credentials, normally known as cedulas, DNI, etc.
 
@@ -39,6 +39,17 @@ alpha2** is being used for country codes.
 **Optional**
 </hr>
 The message helps us to customize the error message and have more control over what is going to be shown to the user.
+</br>
+</br>
+
+## Code allowed and status
+|Country  | Code       | Status   |
+|---------|------------|----------|
+|Ecuador  | ec         | Ok       |
+|Chile    | cl         | Beta     |
+|Peru     | pe         | Beta     |
+|Colombia | co         | Beta     |
+Nota: soon more countries
 
 </br>
 
@@ -53,7 +64,7 @@ Each function is focused on the validation of a specific country, which has its 
 
 
 
-## Español<a name="es"></a>
+## Español
 ## Descripción
 Esta es una libreria que nos permite la validación de las credenciales de identidas, normalmente conocidas como cedulas, DNI, etc.
 
@@ -89,6 +100,18 @@ alpha2** para los códigos de los países.
 **Opcional**
 </hr>
 El mensaje nos sirve para personalizar el mensaje de error y tener mas control de que se le va a mostrar al usuario.
+
+</br>
+</br>
+
+## Códigos permitidos y estado
+|País     | Código     | Estado   |
+|---------|------------|----------|
+|Ecuador  | ec         | Ok       |
+|Chile    | cl         | Beta     |
+|Peru     | pe         | Beta     |
+|Colombia | co         | Beta     |
+Nota: Pronto más paises
 
 </br>
 </br>
