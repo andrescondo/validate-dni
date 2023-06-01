@@ -172,3 +172,38 @@ module.exports.peru = async (dni, message) => {
 
     return;
 }
+
+
+/** Validate DNI the Argentina
+ *
+ * @param dni String number the identification
+ * @param message String Message in case the error
+ * 
+ * */
+module.exports.argentina = async (dni, message) => {
+    const err = new Error();
+    err.code = 400;
+
+    // Eliminar espacios en blanco y guiones del DNI
+    dni = dni.replace(/\s/g, '').replace(/-/g, '');
+
+    // Verificar que el DNI tenga 7 u 8 dígitos numéricos
+    if (!/^\d{7,8}$/.test(dni)) {
+        err.message = 'The DNI must contain 7 or 8 numerical digits.';
+        throw err;
+    }
+
+    // Calcular el dígito verificador
+    const number = parseInt(dni.substr(0, dni.length - 1), 10);
+    const checkDigit = dni.substr(-1);
+    const rest = number % 23;
+    const letters = 'TRWAGMYFPDXBNJZSQVHLCKE';
+    const verifyingLetter = letters.charAt(rest);
+
+    // Comparar el dígito verificador calculado con el dígito verificador ingresado
+    if (checkDigit !== verifyingLetter) {
+        return 'The ID entered is not valid.';
+    }
+
+    return;
+}
