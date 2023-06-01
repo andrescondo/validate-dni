@@ -202,7 +202,46 @@ module.exports.argentina = async (dni, message) => {
 
     // Comparar el dígito verificador calculado con el dígito verificador ingresado
     if (checkDigit !== verifyingLetter) {
-        return 'The ID entered is not valid.';
+        err.message = message || 'The DNI is invalid';
+        throw err; 
+    }
+
+    return;
+}
+
+
+
+/** Validate DNI the El Salvador
+ *
+ * @param dni String number the identification
+ * @param message String Message in case the error
+ * 
+ * */
+module.exports.elSalvador = async (dui, message) => {
+    const err = new Error();
+    err.code = 400;
+
+    // Eliminar espacios en blanco y guiones del dui
+    dui = dui.replace(/\s/g, '').replace(/-/g, '');
+
+    // Verificar que el dui tenga 7 u 8 dígitos numéricos
+    if (!/^\d{8}$/.test(dui)) {
+        err.message = 'The DUI must contain 8 numerical digits.';
+        throw err;
+    }
+
+      // Obtener el número de registro y el dígito verificador
+  const number = parseInt(dui.substr(0, 7), 10);
+  const checkDigit = parseInt(dui.substr(-1), 10);
+
+
+    // Calcular el dígito verificador esperado
+    const expectedDigit  = 9 - ((7 * (number % 10) + 6 * Math.floor((number / 10) % 10) + 5 * Math.floor((number / 100) % 10) + 4 * Math.floor((number / 1000) % 10) + 3 * Math.floor((number / 10000) % 10) + 2 * Math.floor((number / 100000) % 10)) % 10);
+
+    // Comparar el dígito verificador calculado con el dígito verificador ingresado
+    if (checkDigit !== expectedDigit) {
+        err.message = message || 'The DNI is invalid';
+        throw err; 
     }
 
     return;

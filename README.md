@@ -43,12 +43,14 @@ The message helps us to customize the error message and have more control over w
 </br>
 
 ## Code allowed and status
-|Country  | Code       | Status   |
-|---------|------------|----------|
-|Ecuador  | ec         | Ok       |
-|Chile    | cl         | Beta     |
-|Peru     | pe         | Beta     |
-|Colombia | co         | Beta     |
+|Country     | Code       | Status   |
+|------------|------------|----------|
+|Ecuador     | ec         | OK       |
+|Chile       | cl         | OK       |
+|Peru        | pe         | OK       |
+|Colombia    | co         | OK       |
+|El Salvador | sv         | Beta     |
+|Argentina   | ar         | Beta     |
 Nota: soon more countries
 
 </br>
@@ -105,12 +107,14 @@ El mensaje nos sirve para personalizar el mensaje de error y tener mas control d
 </br>
 
 ## Códigos permitidos y estado
-|País     | Código     | Estado   |
-|---------|------------|----------|
-|Ecuador  | ec         | Ok       |
-|Chile    | cl         | Beta     |
-|Peru     | pe         | Beta     |
-|Colombia | co         | Beta     |
+|País        | Código     | Estado   |
+|------------|------------|----------|
+|Ecuador     | ec         | OK       |
+|Chile       | cl         | OK       |
+|Peru        | pe         | OK       |
+|Colombia    | co         | OK       |
+|El Salvador | sv         | Beta     |
+|Argentina   | ar         | Beta     |
 Nota: Pronto más paises
 
 </br>

@@ -1,4 +1,4 @@
-const { ecuador, colombia, chile, argentina } = require("./utils/utils");
+const { ecuador, colombia, chile, argentina, elSalvador } = require("./utils/utils");
 
 /** Validate DNI
  *
@@ -39,6 +39,9 @@ module.exports.validateDNI = async (dni, country, message) => {
             break;
         case 'ar':
             argentina(dni, message)
+            break;
+        case 'sv':
+            elSalvador(dni, message)
             break;
 
         default:
