@@ -1,6 +1,6 @@
 {
   "name": "validate-dni",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "validate ci, dni and other credentials identification",
   "main": "src/index.ts",
   "scripts": {
